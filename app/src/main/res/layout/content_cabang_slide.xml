@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="@dimen/rl_header_main"
+    android:id="@+id/ll_header_cabang_main">
+
+    <RelativeLayout
+        android:id="@+id/ll_header_cabang_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:background="@color/colorBlueMicrosoft"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bg_cabang_slide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_bg_cabang_slide"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_content_bg"
+            android:contentDescription=""
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_border_cabang_slide"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlueMicrosoft"
+            android:layout_below="@id/iv_bg_cabang_slide"
+            android:layout_centerHorizontal="true">
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_header_cabang_slide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rv_header_cabang_slide"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_name_cabang_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Nama Perusahaan"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:shadowColor="@color/colorBlueMicrosoft"
+            android:shadowDx="-1"
+            android:shadowDy="-1"
+            android:shadowRadius="1"
+            android:layout_above="@id/rv_header_cabang_slide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/tv_name_cabang_slide_bottom"
+            app:customFont="Nasalization-Regular.ttf"
+            />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_logo_cabang_slide"
+        android:layout_width="@dimen/civ_logo_cabang_slide"
+        android:layout_height="@dimen/civ_logo_cabang_slide"
+        android:src="@drawable/logo_perusahaan"
+        android:background="@color/colorTransparent"
+        android:backgroundTint="@color/colorTransparent"
+        android:tint="@color/colorTransparent"
+        android:foregroundTint="@color/colorTransparent"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:layout_anchor="@id/rl_border_cabang_slide"
+        app:layout_anchorGravity="center"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

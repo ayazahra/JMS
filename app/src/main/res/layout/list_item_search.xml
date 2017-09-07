@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp" android:id="@+id/rl_container_item_search">
+
+    <LinearLayout
+        android:id="@+id/ll_pict_item_search"
+        android:layout_width="@dimen/civ_pict_item_main"
+        android:layout_height="@dimen/civ_pict_item_main"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layerType="software"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pict_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            android:backgroundTint="@color/colorTransparent"
+            android:foregroundTint="@color/colorTransparent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_item_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/ll_pict_item_search"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        >
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_title_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlueGrey700"
+            android:textStyle="bold"
+            android:text="@string/personal_name"
+            android:gravity="left"
+            app:customFont="arial.ttf"
+            />
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_position_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey700"
+            android:text="@string/personal_position"
+            android:gravity="left"
+            app:customFont="arial.ttf"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

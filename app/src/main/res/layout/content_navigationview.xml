@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_content_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_header_navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/header_menu_bg">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_border_navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorOrange400">
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_content_navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="?android:attr/activatedBackgroundIndicator"
+            android:choiceMode="singleChoice"
+            android:layout_marginTop="16dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon_navigationview"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_perusahaan"
+        android:layout_marginRight="16dp"
+        app:layout_anchor="@id/rl_border_navigationview"
+        app:layout_anchorGravity="center|right|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

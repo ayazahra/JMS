@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_bottom_sheet_height">250dp</dimen>
+    <dimen name="iv_header_bg_login">125dp</dimen>
+    <dimen name="rl_header_main">225dp</dimen>
+    <dimen name="civ_pict_item_main">46dp</dimen>
+    <dimen name="iv_icongroup_item_navigationmenu">28dp</dimen>
+    <dimen name="iv_iconchild_item_navigationmenu">28dp</dimen>
+    <dimen name="civ_logo_cabang_slide">68dp</dimen>
+    <dimen name="iv_bg_cabang_slide">121dp</dimen>
+    <dimen name="civ_pict_item_bawahan">49dp</dimen>
+    <dimen name="iv_medal_item_struktur">40dp</dimen>
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="ll_title_personalinfo">300dp</dimen>
+    <dimen name="iv_profile_user">150dp</dimen>
+    <dimen name="rv_header_cabang_slide">44dp</dimen>
+    <dimen name="tv_name_cabang_slide_bottom">9dp</dimen>
+</resources>

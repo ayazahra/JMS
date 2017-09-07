@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_header_anakboc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Title"
+        android:gravity="center"
+        android:background="@drawable/header_content_cabang_bg"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:customFont="arial.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_below="@id/tv_header_anakboc"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <ListView
+            android:id="@+id/lv_list_anakboc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:cacheColorHint="@color/colorTransparent"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:smoothScrollbar="true"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_anakboc"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_pict_popup_anakboc"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

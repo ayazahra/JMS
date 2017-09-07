@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/res/merged/androidTest/debug/mipmap-mdpi-v4/ic_progress_gray.png",
+        "source": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/bundles/debug/res/mipmap-mdpi-v4/ic_progress_gray.png"
+    },
+    {
+        "merged": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/res/merged/androidTest/debug/mipmap-mdpi-v4/ic_queued_gray.png",
+        "source": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/bundles/debug/res/mipmap-mdpi-v4/ic_queued_gray.png"
+    },
+    {
+        "merged": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/res/merged/androidTest/debug/mipmap-mdpi-v4/ic_alert_gray.png",
+        "source": "/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/build/intermediates/bundles/debug/res/mipmap-mdpi-v4/ic_alert_gray.png"
+    }
+]

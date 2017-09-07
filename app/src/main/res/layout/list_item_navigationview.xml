@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="?android:attr/activatedBackgroundIndicator">
+
+    <RelativeLayout
+        android:id="@+id/rl_group_item_navigationmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/iv_icongroup_item_navigationmenu"
+            android:layout_width="@dimen/iv_icongroup_item_navigationmenu"
+            android:layout_height="@dimen/iv_icongroup_item_navigationmenu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_titlegroup_item_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlueGrey900"
+            android:textStyle="bold"
+            android:text="Title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_icongroup_item_navigationmenu"
+            android:layout_centerVertical="true"
+            app:customFont="arial.ttf"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_child_item_navigationmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/iv_iconchild_item_navigationmenu"
+            android:layout_width="@dimen/iv_iconchild_item_navigationmenu"
+            android:layout_height="@dimen/iv_iconchild_item_navigationmenu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_titlechild_item_navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:textStyle="bold"
+            android:text="Title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_iconchild_item_navigationmenu"
+            android:layout_centerVertical="true"
+            app:customFont="arial.ttf"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_margin="16dp"
+    android:gravity="center_horizontal" android:id="@+id/ll_container_item_bottom_main">
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_title_item_bottom_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlueGrey700"
+        android:text="Profil Perusahaan"
+        android:gravity="center_horizontal"
+        app:customFont="arial.ttf"
+        />
+
+</LinearLayout>

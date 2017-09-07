@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:paddingLeft="8dp" android:paddingRight="8dp"
+    android:paddingTop="4dp" android:paddingBottom="4dp"
+    android:id="@+id/rl_container_item_header" android:background="@drawable/header_list_bg"
+    android:layout_marginRight="4dp" android:layout_marginLeft="4dp">
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_title_item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:text="Nama Header"
+        android:gravity="center"
+        app:customFont="arial.ttf"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

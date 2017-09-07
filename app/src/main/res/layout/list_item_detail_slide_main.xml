@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <su.whs.watl.ui.MultiColumnTextViewEx
+        android:id="@+id/tv_content_detail_slide_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="1dp"
+        android:layout_centerInParent="true"
+        app:textPaddingTop="3dp"
+        app:textPaddingBottom="3dp"
+        app:columnSpacing="10dp"
+        app:asyncReflow="true"
+        app:justificationEnabled="true"
+        />
+
+</RelativeLayout>

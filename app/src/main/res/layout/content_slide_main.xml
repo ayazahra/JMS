@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorGrey300" android:id="@+id/rl_slide_main">
+
+    <ImageView
+        android:id="@+id/iv_pict_slide_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/cover"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center"
+        android:background="@color/colorBlueMicrosoftO30"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_title_slide_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Title"
+            android:shadowColor="@color/colorBlueGrey900"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            app:customFont="arial.ttf"
+            />
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_content_slide_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorYellowA100"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="Detail"
+            android:shadowColor="@color/colorBlueGrey900"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="8dp"
+            app:customFont="arial.ttf"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

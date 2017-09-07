@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/white_view_corner_bg">
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_header_anggaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Title"
+        android:gravity="center"
+        android:background="@drawable/header_content_cabang_bg"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:customFont="arial.ttf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_header_anggaran"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_content_bg"
+        >
+
+        <es.voghdev.pdfviewpager.library.RemotePDFViewPager
+            android:id="@+id/rpvp_content_anggaran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+        </es.voghdev.pdfviewpager.library.RemotePDFViewPager>
+
+        <WebView
+            android:id="@+id/wv_content_anggaran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+        </WebView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_anggaran"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>

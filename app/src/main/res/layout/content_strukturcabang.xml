@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/white_view_corner_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription=""
+        android:scaleType="center"
+        android:src="@drawable/main_content_bg"
+        />
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_header_strukturcabang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Title"
+        android:gravity="center"
+        android:background="@drawable/header_content_cabang_bg"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:customFont="arial.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/tv_header_strukturcabang"
+        android:layout_marginTop="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_width"
+            android:orientation="horizontal"
+            android:layerType="software">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_pict_strukturcabang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:backgroundTint="@color/colorTransparent"
+                android:foregroundTint="@color/colorTransparent"
+                android:src="@drawable/logo_perusahaan"
+                />
+
+        </LinearLayout>
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_name_strukturcabang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlueGrey700"
+            android:textStyle="bold"
+            android:text="Nama"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:customFont="arial.ttf"/>
+
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="24dp"
+            android:background="@color/colorOrange400"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bawahan_strukturcabang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/colorTransparent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_strukturcabang"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close"
+        android:contentDescription=""
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>

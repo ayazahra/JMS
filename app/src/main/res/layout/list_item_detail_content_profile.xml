@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layerType="software"
+            android:background="@drawable/header_menu_bg">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_pict_item_detail_content_profile"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/placeholder"
+                android:background="@color/colorTransparent"
+                android:backgroundTint="@color/colorTransparent"
+                android:tint="@color/colorTransparent"
+                android:foregroundTint="@color/colorTransparent"
+                />
+
+            <com.jasamarga.smartbook.widget.CustomTextView
+                android:id="@+id/tv_name_item_detail_content_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorWhite"
+                android:text="Profil Name"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                app:customFont="arial.ttf"
+                />
+
+            <com.jasamarga.smartbook.widget.CustomTextView
+                android:id="@+id/tv_position_item_detail_content_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:text="Position Name"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                app:customFont="arial.ttf"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="@drawable/main_content_bg">
+
+            <su.whs.watl.ui.TextViewEx
+                android:id="@+id/tv_data_item_detail_content_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlueGrey900"
+                android:text="Biodata Description"
+                app:asyncReflow="true"
+                app:filterEmptyLines="true"
+                app:justificationEnabled="true"
+                app:minColumnWidth="12dp"
+                />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

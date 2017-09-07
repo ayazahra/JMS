@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="iv_header_bg_login">150dp</dimen>
+    <dimen name="rl_header_main">250dp</dimen>
+    <dimen name="civ_pict_item_main">54dp</dimen>
+    <dimen name="iv_icongroup_item_navigationmenu">36dp</dimen>
+    <dimen name="iv_iconchild_item_navigationmenu">36dp</dimen>
+    <dimen name="civ_logo_cabang_slide">76dp</dimen>
+    <dimen name="iv_bg_cabang_slide">133dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="main_bottom_sheet_height">300dp</dimen>
+    <dimen name="civ_pict_item_bawahan">57dp</dimen>
+    <dimen name="iv_medal_item_struktur">48dp</dimen>
+    <dimen name="ll_title_personalinfo">340dp</dimen>
+    <dimen name="iv_profile_user">190dp</dimen>
+    <dimen name="rv_header_cabang_slide">44dp</dimen>
+    <dimen name="tv_name_cabang_slide_bottom">9dp</dimen>
+</resources>

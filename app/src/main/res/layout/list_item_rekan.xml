@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical" android:layerType="software"
+    android:gravity="center" android:id="@+id/ll_container_item_rekan"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_pict_item_rekan"
+        android:layout_width="@dimen/civ_pict_item_main"
+        android:layout_height="@dimen/civ_pict_item_main"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/placeholder"
+        />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/white_view_corner_bg">
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_header_sekilas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Title"
+        android:gravity="center"
+        android:background="@drawable/header_content_cabang_bg"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:customFont="arial.ttf"/>
+
+    <com.jasamarga.smartbook.widget.CustomTextView
+        android:id="@+id/tv_title_sekilas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorBlueGrey700"
+        android:text=""
+        android:padding="16dp"
+        android:layout_below="@id/tv_header_sekilas"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_content_bg"
+        app:customFont="arial.ttf"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_content_sekilas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@id/tv_title_sekilas"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_content_bg"
+        >
+
+        <com.jasamarga.smartbook.widget.CustomTextView
+            android:id="@+id/tv_dummy_sekilas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey700"
+            android:text=""
+            android:layout_centerInParent="true"
+            app:customFont="arial.ttf"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:weightSum="10"
+            android:gravity="center_horizontal"
+            android:background="@color/colorTransparent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_sekilas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9.2"
+                android:overScrollMode="never"
+                android:background="@color/colorTransparent"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+            <com.ugurtekbas.fadingindicatorlibrary.FadingIndicator
+                android:id="@+id/fi_sekilas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:padding="10dp"
+                app:radius="5dp"
+                app:fillColor="@color/colorBlue900"
+                app:strokeColor="@android:color/transparent"
+                app:shape="@string/shape_circle"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_sekilas"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_header_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        >
+
+        <ImageView
+            android:id="@+id/iv_header_bg_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_header_bg_login"
+            android:scaleType="center"
+            android:src="@drawable/header_menu_bg"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/rl_border_header_login"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlueMicrosoft"
+            >
+
+        </RelativeLayout>
+
+        <include layout="@layout/content_login"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_perusahaan"
+        app:layout_anchor="@id/rl_border_header_login"
+        app:layout_anchorGravity="center"
+        tools:ignore="ContentDescription" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Smartbook</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_submit">Login</string>
+    <string name="login_rights">\u00A9 2016 Jasa Marga - Indonesia. All rights reserved</string>
+    <string name="personal_name"></string>
+    <string name="personal_position"></string>
+    <string name="personal_title">Agus Sofian</string>
+    <string name="personal_data"><b>Kantor Pusat</b>\n\nPlaza Tol Taman Mini Indonesia Indah 13550 Jakarta\n\n\n\n<p>Semarang, 10 Agustus 1971</p>\n<p>Tenaga Kontrak Profesional</p></string>
+    <string name="personal_status"><b>Info Kepegawaian</b></string>
+    <string name="personal_kantor_pusat"><b>Kantor Pusat</b></string>
+    <string name="personal_ttl"><b>Tempat dan tanggal lahir</b></string>
+    <string name="personal_agama_gender"><b>Agama dan jenis kelamin</b></string>
+    <string name="personal_alamat"><b>Alamat tinggal</b></string>
+    <string name="personal_kontak"><b>Kontak person</b></string>
+    <string name="personal_atasan"><b>Atasan</b></string>
+    <string name="personal_search">Search Personal Info</string>
+</resources>

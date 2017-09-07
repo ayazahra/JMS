@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewWS">
+        <attr name="selectionCursorDrawableLeft" format="reference"></attr>
+        <attr name="selectionCursorDrawableRight" format="reference"></attr>
+        <attr name="selectionColor" format="reference"></attr>
+        <attr name="urlHighlightBeforeOpen" format="boolean"></attr>
+        <attr name="urlHighlightColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewEx">
+        <attr name="justificationEnabled" format="boolean"/>
+        <attr name="filterEmptyLines" format="boolean"/>
+        <attr name="emptyLinesFilterTreshold" format="integer"/>
+        <attr name="paragraphMarginTop" format="dimension"/>
+        <attr name="paragraphMarginLeft" format="dimension"/>
+        <attr name="asyncReflow" format="boolean"/>
+        <attr name="threadPoolTag" format="string"/>
+        <attr name="enableImageWrap" format="boolean"/>
+        <attr name="imageMinScaleFactor" format="float"/>
+        <attr name="imageWrapMinRatio" format="float"/>
+        <attr name="imageWrapMaxWidthFraction" format="float"/>
+        <attr name="imagePaddingLeft" format="dimension"/>
+        <attr name="imagePaddingTop" format="dimension"/>
+        <attr name="imagePaddingRight" format="dimension"/>
+        <attr name="imagePaddingBottom" format="dimension"/>
+        <attr name="imageAnimationAutoStart" format="boolean"/>
+        <attr name="imageAnimationOverlayDrawable" format="reference"/>
+        <attr name="startAnimationOnClick" format="boolean"/>
+        <attr name="zoomImageOnClick" format="boolean"/>
+        <attr name="zoomBackDrawable" format="reference"/>
+        <attr name="textPaddingLeft" format="dimension"/>
+        <attr name="textPaddingTop" format="dimension"/>
+        <attr name="textPaddingRight" format="dimension"/>
+        <attr name="textPaddingBottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MultiColumnTextViewEx">
+        <attr name="minColumnWidth" format="dimension"></attr>
+        <attr name="maxColumnWidth" format="dimension"></attr>
+        <attr name="columnCount" format="integer"></attr>
+        <attr name="columnSpacing" format="dimension"></attr>
+        <attr name="columnSeparatorDrawable" format="reference"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="ContentViewOptions">
+        
+    </declare-styleable>
+    <declare-styleable name="ImagePlacementHanlder">
+
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerExt">
+
+    </declare-styleable>
+</resources>

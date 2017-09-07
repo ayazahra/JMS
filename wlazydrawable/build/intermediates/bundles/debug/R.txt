@@ -1,0 +1,5 @@
+int drawable img_placeholder 0x7f020000
+int mipmap ic_alert_gray 0x7f030000
+int mipmap ic_progress_gray 0x7f030001
+int mipmap ic_queued_gray 0x7f030002
+int string app_name 0x7f040000
