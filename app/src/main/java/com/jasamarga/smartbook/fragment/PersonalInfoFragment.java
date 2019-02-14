@@ -51,6 +51,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -409,6 +410,7 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
     private String convertDate (String sourceDateTxt)
     {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         Date sourceDate = null;
         try {
             sourceDate = dateFormat.parse(sourceDateTxt);
@@ -485,5 +487,4 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
 //            }
         }
     }
-
 }
