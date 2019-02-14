@@ -53,8 +53,8 @@ public class StrukturListAdapter extends RecyclerView.Adapter<StrukturListAdapte
 
     public static class StrukturListViewHolder extends RecyclerView.ViewHolder {
         private ImageView iv_medal_item_struktur;
-        private TextViewEx tv_content_item_struktur;
 
+        private TextViewEx tv_content_item_struktur;
         StrukturListViewHolder(View view) {
             super(view);
             this.iv_medal_item_struktur = (ImageView) view.findViewById(R.id.iv_medal_item_struktur);

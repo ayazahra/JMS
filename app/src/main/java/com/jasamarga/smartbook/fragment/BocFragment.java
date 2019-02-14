@@ -96,9 +96,11 @@ public class BocFragment extends DialogFragment {
         this.wv_content_boc.setWebViewClient(new BocWebviewClient());
         Log.d(TAG, "htmlString " + this.kontent.replace("<img src=","<img src=http://202.158.49.221:8000/"));
         if (this.mode.equals("web"))
-            this.wv_content_boc.loadDataWithBaseURL(null, this.kontent.replace("<img src=\"","<img src=\"http://202.158.49.221:8000/"), "text/html", "utf-8", null);
+            //this.wv_content_boc.loadDataWithBaseURL(null, this.kontent.replace("<img src=\"","<img src=\"http://202.158.49.221:8000/"), "text/html", "utf-8", null);
+            this.wv_content_boc.loadDataWithBaseURL(null, this.kontent, "text/html", "utf-8", null);
         else
-            this.wv_content_boc.loadUrl(this.kontent.replace("<img src=\"","<img src=\"http://202.158.49.221:8000/"));
+            //this.wv_content_boc.loadUrl(this.kontent.replace("<img src=\"","<img src=\"http://202.158.49.221:8000/"));
+            this.wv_content_boc.loadUrl(this.kontent);
 
         this.iv_close_boc.setOnClickListener(new CloseBoc());
     }

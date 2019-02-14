@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/apridosandyasa/Documents/smartbook-android/wlazydrawable/src/release/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\MII016\StudioProjects\smartbook2\wlazydrawable\src\main\shaders"/></dataSet><dataSet config="release"><source path="C:\Users\MII016\StudioProjects\smartbook2\wlazydrawable\src\release\shaders"/></dataSet></merger>

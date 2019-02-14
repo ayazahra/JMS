@@ -46,7 +46,10 @@ import com.jasamarga.smartbook.widget.CustomTextView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -259,7 +262,10 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
         this.tv_jabatan_personalinfo.setText(this.personalInfo.getJabatan());
         this.tv_statuspeg_personalinfo.setText(this.personalInfo.getNpp() + ", " + this.personalInfo.getStatus_desc());
         this.tv_alamatkantor_personalinfo.setText(this.personalInfo.getKantor_alamat());
-        this.tv_tempatttl_personalinfo.setText(this.personalInfo.getTempatlahir() + ", " + Utility.DateUtility.parseFormatDate(this.personalInfo.getTanggallahir()));
+        //this.tv_tempatttl_personalinfo.setText(this.personalInfo.getTempatlahir() + ", " + Utility.DateUtility.parseFormatDate(this.personalInfo.getTanggallahir()));
+
+        this.tv_tempatttl_personalinfo.setText(this.personalInfo.getTempatlahir() + ", " + this.convertDate(this.personalInfo.getTanggallahir()));
+
         this.tv_genderkelamin_personalinfo.setText(this.personalInfo.getAgama() + ", " + (this.personalInfo.getJenis_kelamin().equals("M") ? "Laki-laki" : "Perempuan"));
         this.tv_alamat_personalinfo.setText("-"); //setText(this.personalInfo.getPersonAddress());
         this.tv_telp_personalinfo.setText("-"); //setText(this.personalInfo.getPersonTelp());
@@ -398,6 +404,21 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
 
         this.rv_bawahan_personalinfo_adapter = new BawahanListAdapter(this.context, this.bawahanList, this);
         this.rv_bawahan_personalinfo.setAdapter(this.rv_bawahan_personalinfo_adapter);
+    }
+
+    private String convertDate (String sourceDateTxt)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+        Date sourceDate = null;
+        try {
+            sourceDate = dateFormat.parse(sourceDateTxt);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        SimpleDateFormat targetFormat = new SimpleDateFormat("dd MMMM yyyy");
+        String resultDate = targetFormat.format(sourceDate);
+        return resultDate;
     }
 
     private class ActionPictAtasanListener implements View.OnClickListener {
