@@ -409,8 +409,7 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
 
     private String convertDate (String sourceDateTxt)
     {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
-        dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date sourceDate = null;
         try {
             sourceDate = dateFormat.parse(sourceDateTxt);
@@ -420,6 +419,7 @@ public class PersonalInfoFragment extends DialogFragment implements AppBarLayout
 
         SimpleDateFormat targetFormat = new SimpleDateFormat("dd MMMM yyyy");
         String resultDate = targetFormat.format(sourceDate);
+
         return resultDate;
     }
 

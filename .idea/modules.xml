@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JMS.iml" filepath="$PROJECT_DIR$/JMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smartbook2.iml" filepath="$PROJECT_DIR$/smartbook2.iml" />
       <module fileurl="file://$PROJECT_DIR$/wATLLibs/wATLLibs.iml" filepath="$PROJECT_DIR$/wATLLibs/wATLLibs.iml" />
       <module fileurl="file://$PROJECT_DIR$/wlazydrawable/wlazydrawable.iml" filepath="$PROJECT_DIR$/wlazydrawable/wlazydrawable.iml" />
     </modules>
